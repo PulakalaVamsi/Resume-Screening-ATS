@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Screening</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Resume Screening System</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="resume_file" required>
+        <textarea name="job_description" placeholder="Paste Job Description" required></textarea>
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if result %}
+<div class="result">
+    <p><b>Matched Skills:</b> {{ result.matched }}</p>
+    <p><b>Missing Skills:</b> {{ result.missing }}</p>
+    <p><b>Skill Match Percentage:</b> {{ result.skill_percent }}%</p>
+    <p><b>Resume Experience:</b> {{ result.resume_exp }} years</p>
+    <p><b>Required Experience:</b> {{ result.jd_exp }} years</p>
+    <p><b>Final Score:</b> {{ result.score }}%</p>
+    <p><b>Fit:</b> {{ result.fit }}</p>
+</div>
+{% endif %}
+
+</div>
+
+</body>
+</html>
