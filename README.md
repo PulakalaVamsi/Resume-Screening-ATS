@@ -78,7 +78,7 @@ Steps to Run
 
 Clone the repository:
 
-git clone [https://github.com/your-username/Resume-Screening-System.git](https://github.com/your-username/Resume-Screening-System.git)
+git clone [https://github.com/your-username/Resume-Screening-System.git](https://github.com/PulakalaVamsi/Resume-Screening-ATS)
 cd Resume-Screening-System
 
 Install required libraries:
