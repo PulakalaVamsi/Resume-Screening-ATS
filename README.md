@@ -148,4 +148,3 @@ This project is licensed under the MIT License.
 
 This Resume Screening System showcases the integration of **Web Development, Text Processing, and Machine Learning** to automate candidate evaluation.
 It is suitable for academic projects, internships, and entry-level software engineering portfolios.
-
